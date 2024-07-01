@@ -47,7 +47,7 @@
 	align-items: center;
 
 	@media (width > 767px) {
-		grid-template-columns: minmax(0, 10.5625rem) minmax(0, 1fr) auto;
+		grid-template-columns: minmax(0, 1.5625rem) minmax(0, 1fr) auto;
 		gap: 5.3125rem;
 	}
 
@@ -102,8 +102,8 @@
 		top: 0;
 		bottom: 0;
 		margin: auto;
-		width: 24px;
-		height: 24px;
+		width: 1.5rem;
+		height: 1.5rem;
 		svg{
 			fill: var(--color-black);
 
@@ -134,7 +134,7 @@
 
 	&:hover{
 		.header__elements-search-input-wrapper{
-			width: 242px;
+			width: 15.125rem;
 		}
 
 		.header__elements-search-submit{
@@ -147,7 +147,7 @@
 	&:focus-within,
 	&:has(.header__elements-search-input:valid){
 		.header__elements-search-input-wrapper{
-			width: 242px;
+			width: 15.125rem;
 		}
 
 		.header__elements-search-submit{
@@ -266,8 +266,8 @@
 	background: var(--color-accent);
 	color: var(--color-accent-contast);
 	border: 2px solid var(--color-bg-main);
-	left: -0.6875rem;
-	top: -0.4375rem;
+	left: -.6875rem;
+	top: -.4375rem;
 	width: 1.5625rem;
 	height: 1.3125rem;
 	display: flex;
@@ -389,7 +389,7 @@
 	}
 
 	@media (width > 767px) {
-		padding: 10.5rem 1.25rem 1.25rem;
+		padding: 1.5rem 1.25rem 1.25rem;
 		overflow: auto;
 	}
 
@@ -581,7 +581,7 @@
 	@media (width > 767px) {
 		grid-template-columns: minmax(0, 4.25rem) minmax(0, 1fr);
 		gap: 2.375rem;
-		padding: 0.9375rem 0;
+		padding: .9375rem 0;
 	}
 
 	@media (width > 1599px) {
@@ -611,7 +611,7 @@
 
 .header__nav-sublist{
 	display: none;
-	padding: 0.375rem 0;
+	padding: .375rem 0;
 
 	&_opened{
 		display: block;
@@ -697,8 +697,8 @@
 
 
 .header__nav-item-arrow{
-	width: 0.9375rem;
-	height: 0.9375rem;
+	width: .9375rem;
+	height: .9375rem;
 	margin: 0 auto;
 	transition: all .2s ease-in;
 	position: relative;

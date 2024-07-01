@@ -3,10 +3,10 @@
 	appearance: none;
 	outline: none;
 	padding: .5rem .875rem;
-	font-size: 0.8125rem;
+	font-size: .8125rem;
 	font-weight: 700;
 	line-height: 1.7;
-	letter-spacing: 0.1em;
+	letter-spacing: .1em;
 	text-align: center;
 	text-transform: uppercase;
 	transition: all .2s ease-in;
@@ -22,7 +22,7 @@
 	}
 
 	&_margin-around{
-		margin: 5px;
+		margin: .25rem;
 	}
 
 	&:hover{

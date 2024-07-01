@@ -1,9 +1,15 @@
 .count-input{
+	display: flex;
+	flex-direction: column;
+}
+
+.count-input__wrapper{
 	display: inline-flex;
 	border: 1px solid var(--color-secondary);
-	padding: 10px 16px;
+
+	padding: .625rem 1rem;
 	margin: 0 auto;
-	min-width: 81px;
+	min-width: 5.0625rem;
 	justify-content: space-between;
 }
 
@@ -11,16 +17,16 @@
 	background: var(--color-black);
 	color: var(--color-base);
 	border: none;
-	width: 22px;
-	height: 22px;
+	width: 1.375rem;
+	height: 1.375rem;
 	position: relative;
 
 	&_minus{
-		margin-left: -27px;
+		margin-left: -1.6875rem;
 	}
 
 	&_plus{
-		margin-right: -27px;
+		margin-right: -1.6875rem;
 	}
 
 	&:hover{
@@ -36,8 +42,8 @@
 .count-input__button-icon{
 	position: absolute;
 	display: block;
-	width: 0.75rem;
-	height: 0.75rem;
+	width: .75rem;
+	height: .75rem;
 	top: 0;
 	bottom: 0;
 	right: 0;
@@ -65,7 +71,7 @@
 	text-align: right;
 	font-variant-numeric: tabular-nums;
 
-	font-size: 12px;
+	font-size: .75rem;
 	font-weight: 500;
 	line-height: 1.2;
 	padding: 0;
@@ -76,7 +82,7 @@
 	outline: none;
 
 	@media (width > 767px) {
-		font-size: 0.8125rem;
+		font-size: .8125rem;
 	}
 }
 
@@ -87,6 +93,6 @@
 	line-height: 1.2;
 
 	@media (width > 767px) {
-		font-size: 0.8125rem;
+		font-size: .8125rem;
 	}
 }

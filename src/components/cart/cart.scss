@@ -21,10 +21,10 @@
 
 
 .cart__headings-item{
-	font-size: 0.8125rem;
+	font-size: .8125rem;
 	font-weight: 500;
-	line-height: 15.85px;
-	letter-spacing: 0.05em;
+	line-height: 1.2;
+	letter-spacing: .05em;
 	text-transform: uppercase;
 	color: var(--color-secondary);
 	text-align: left;
@@ -47,7 +47,7 @@
 .cart__content{
 	display: grid;
 	grid-template-columns: minmax(0, 1fr);
-	gap: 0.625rem;
+	gap: .625rem;
 
 
 	@media (width > 767px) {
@@ -60,7 +60,7 @@
 	align-items: center;
 	grid-template-columns: min-content auto minmax(0, 1fr);
 	background: var(--color-black);
-	padding: 0.75rem 0.75rem 1rem;
+	padding: .75rem .75rem 1rem;
 	position: relative;
 	gap: 1rem;
 
@@ -120,8 +120,8 @@
 
 	svg{
 		position: absolute;
-		width: 0.875rem;
-		height: 0.875rem;
+		width: .875rem;
+		height: .875rem;
 		left: 0;
 		top: 0;
 		right: 0;
@@ -147,7 +147,7 @@
 	padding-right: 2rem;
 	display: grid;
 	grid-template-columns: min-content minmax(0, 1fr);
-	gap: 0.25rem 0.625rem;
+	gap: .25rem .625rem;
 
 	@media (width > 767px) {
 		display: table-cell;
@@ -171,23 +171,23 @@
 	font-weight: 500;
 	line-height: 1.4;
 	text-align: center;
-	padding: 0.125rem 0.3125rem;
-	border-radius: 0.25rem;
+	padding: .125rem .3125rem;
+	border-radius: .25rem;
 	background: var(--color-border);
 
 	@media (width > 767px) {
-		font-size: 0.8125rem;
+		font-size: .8125rem;
 		margin-top: .625rem;
 	}
 
 	@media (width > 767px) {
-		font-size: 0.8125rem;
+		font-size: .8125rem;
 		margin-top: .625rem;
 	}
 }
 
 .cart__product-title{
-	font-size: 0.9375rem;
+	font-size: .9375rem;
 	font-weight: 500;
 	line-height: 1.2;
 
@@ -202,7 +202,7 @@
 }
 
 .cart__product-desc{
-	font-size: 0.75rem;
+	font-size: .75rem;
 	font-weight: 500;
 	line-height: 1.2;
 	color: var(--color-secondary);
@@ -218,7 +218,7 @@
 	}
 
 	@media (width > 1023px) {
-		font-size: 0.9375rem;
+		font-size: .9375rem;
 	}
 }
 
@@ -235,10 +235,10 @@
 	&::before{
 		content: attr(data-title);
 		display: block;
-		font-size: 0.625rem;
+		font-size: .625rem;
 		font-weight: 500;
 		line-height: 1.2;
-		letter-spacing: 0.05em;
+		letter-spacing: .05em;
 		text-transform: uppercase;
 		color: var(--color-secondary);
 
@@ -271,10 +271,10 @@
 	&::before{
 		content: attr(data-title);
 		display: block;
-		font-size: 0.625rem;
+		font-size: .625rem;
 		font-weight: 500;
 		line-height: 1.2;
-		letter-spacing: 0.05em;
+		letter-spacing: .05em;
 		text-transform: uppercase;
 		color: var(--color-secondary);
 
@@ -377,15 +377,15 @@
 
 .promocode__label{
 	grid-column: 1 / -1;
-	font-size: 0.6875rem;
+	font-size: .6875rem;
 	font-weight: 500;
 	line-height: 1.2;
-	letter-spacing: 0.05em;
+	letter-spacing: .05em;
 	text-transform: uppercase;
 	color: var(--color-secondary);
 
 	@media (width > 767px) {
-		font-size: 0.8125rem;
+		font-size: .8125rem;
 	}
 }
 
@@ -415,8 +415,8 @@
 .cart__result-label{
 	font-size: .6875rem;
 	font-weight: 500;
-	line-height: 13.41px;
-	letter-spacing: 0.05em;
+	line-height: 1.2;
+	letter-spacing: .05em;
 	text-transform: uppercase;
 	color: var(--color-secondary);
 

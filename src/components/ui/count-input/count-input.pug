@@ -1,13 +1,14 @@
 form(action="" class="count-input js-count-input")
-	input(type="hidden" name="product-id")
-	button(type="button" class="count-input__button count-input__button_minus" aria-label="-")
-		span(class="count-input__button-icon")
-			include /svg/minus.svg
-	label(class="count-input__element")
-		input(class="count-input__element-counter" type="number" min="0" value="1" max="50")
-		span(class="count-input__element-label") шт
-	button(type="button" class="count-input__button count-input__button_plus" aria-label="+")
-		span(class="count-input__button-icon")
-			include /svg/plus.svg
-noscript
-	button(type="submit" class="button button_margin-around button_small") Обновить
+	div(class="count-input__wrapper")
+		input(type="hidden" name="product-id")
+		button(type="button" class="count-input__button count-input__button_minus" aria-label="-")
+			span(class="count-input__button-icon")
+				include /svg/minus.svg
+		label(class="count-input__element")
+			input(class="count-input__element-counter" type="number" min="0" value="1" max="50")
+			span(class="count-input__element-label") шт
+		button(type="button" class="count-input__button count-input__button_plus" aria-label="+")
+			span(class="count-input__button-icon")
+				include /svg/plus.svg
+	noscript
+		button(type="submit" class="button button_margin-around button_small") Обновить
