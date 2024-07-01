@@ -1,0 +1,115 @@
+header(class="header js-header")
+	div(class="container")
+		div(class="header__grid")
+			a(href="/" class="header__logo")
+				img(src="/logo.svg" alt="Midas - логотип ресторана")
+
+			button(type="button" class="header__nav-button js-menu-toggle" aria-label="Меню")
+				span(class="header__nav-button-icon")
+					span(class="header__nav-button-icon-item header__nav-button-icon-item_open")
+						include /svg/menu.svg
+					span(class="header__nav-button-icon-item header__nav-button-icon-item_close")
+						include /svg/close.svg
+				span(class="header__nav-button-title") Меню
+
+			nav(class="header__nav")
+				ul(class="header__nav-list")
+					li(class="header__nav-item header__nav-item_promo")
+						a(href="#" class="header__nav-item-link")
+							span(class="header__nav-item-title")
+								span(class="header__nav-item-title-text") Акции
+					li(class="header__nav-item header__nav-item_has-children")
+						span(class="header__nav-item-title header__nav-item-title_has-children js-subnav-toggle")
+							span(class="header__nav-item-arrow")
+								include /svg/menu-arrow.svg
+							span(class="header__nav-item-title-text") Горячее 
+								sup(class="header__nav-item-counter")
+									small 3 шт
+						ul(class="header__nav-sublist")
+							li(class="header__nav-item")
+								a(href="#" class="header__nav-item-link")
+									span(class="header__nav-item-img")
+										img(src="/nav/1.png" alt="Горячие блюда")
+									span(class="header__nav-item-title")
+										span(class="header__nav-item-title-text") Горячие блюда
+							li(class="header__nav-item")
+								a(href="#" class="header__nav-item-link")
+									span(class="header__nav-item-img")
+										img(src="/nav/2.png" alt="Супы")
+									span(class="header__nav-item-title")
+										span(class="header__nav-item-title-text") Супы
+							li(class="header__nav-item")
+								a(href="#" class="header__nav-item-link")
+									span(class="header__nav-item-img")
+										img(src="/nav/3.png" alt="Хинкали")
+									span(class="header__nav-item-title")
+										span(class="header__nav-item-title-text") Хинкали
+
+
+					li(class="header__nav-item header__nav-item_has-children")
+						span(class="header__nav-item-title header__nav-item-title_has-children js-subnav-toggle")
+							span(class="header__nav-item-arrow")
+								include /svg/menu-arrow.svg
+							span(class="header__nav-item-title-text") Холодное
+								sup(class="header__nav-item-counter")
+									small 3 шт
+						ul(class="header__nav-sublist")
+							li(class="header__nav-item")
+								a(href="#" class="header__nav-item-link")
+									span(class="header__nav-item-img")
+										img(src="/nav/4.png" alt="Холодные закуски")
+									span(class="header__nav-item-title")
+										span(class="header__nav-item-title-text") Холодные закуски
+
+							li(class="header__nav-item")
+								a(href="#" class="header__nav-item-link")
+									span(class="header__nav-item-img")
+										img(src="/nav/5.png" alt="Салаты")
+									span(class="header__nav-item-title")
+										span(class="header__nav-item-title-text") Салаты
+
+							li(class="header__nav-item")
+								a(href="#" class="header__nav-item-link")
+									span(class="header__nav-item-title")
+										span(class="header__nav-item-title-text") Соусы
+
+
+					li(class="header__nav-item")
+						a(href="#" class="header__nav-item-link")
+							span(class="header__nav-item-img")
+								img(src="/nav/6.png" alt="Свежая выпечка")
+							span(class="header__nav-item-title")
+								span(class="header__nav-item-title-text") Свежая выпечка
+
+					li(class="header__nav-item")
+						a(href="#" class="header__nav-item-link")
+							span(class="header__nav-item-img")
+								img(src="/nav/7.png" alt="Десерты")
+							span(class="header__nav-item-title")
+								span(class="header__nav-item-title-text") Десерты
+
+					li(class="header__nav-item")
+						a(href="#" class="header__nav-item-link")
+							span(class="header__nav-item-img")
+								img(src="/nav/8.png" alt="Напитки")
+							span(class="header__nav-item-title")
+								span(class="header__nav-item-title-text") Напитки
+
+
+			div(class="header__elements")
+
+				form(action="#" class="header__elements-search")
+					div(class="header__elements-search-input-wrapper")
+						label(class="visually-hidden" for="search-field") Поиск блюда
+						input(class="header__elements-search-input input" placeholder="Поиск блюда" type="search" required autocomplete="off" id="search-field")
+					button(class="header__elements-search-submit" type="submit" aria-label="Искать")
+						include /svg/search.svg
+
+				a(href="#" class="header__elements-profile" aria-label="Личный кабинет")
+					include /svg/user.svg
+
+				a(href="#" class="header__elements-cart" aria-label="Корзина. Добавлено 5 товаров")
+					span(class="header__elements-cart-icon")
+						include /svg/cart.svg
+					span(class="header__elements-cart-value")
+						span(class="header__elements-cart-value-number") 5

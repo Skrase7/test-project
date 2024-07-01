@@ -1,0 +1,16 @@
+{
+	"name": "test-task",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build --base=./",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"sass": "^1.77.6",
+		"vite": "^5.3.1",
+		"vite-plugin-pug-transformer": "^1.0.5"
+	}
+}

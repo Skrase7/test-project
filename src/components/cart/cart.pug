@@ -1,0 +1,120 @@
+
+div(class="cart")
+	table(class="cart__table")
+		thead(class="cart__thead")
+			tr(class="cart__headings")
+				th(class="cart__headings-item")
+				th(class="cart__headings-item cart__headings-item_food") Блюдо:
+				th(class="cart__headings-item cart__headings-item_price") Цена:
+				th(class="cart__headings-item cart__headings-item_count") Кол-во:
+				th(class="cart__headings-item cart__headings-item_summ") Сумма:
+				th(class="cart__headings-item cart__headings-item_delene")
+		tbody(class="cart__content")
+			//- 1 Блюдо
+			tr(class="cart__product-item")
+				td(class="cart__product-item-img")
+					div(class="cart__product-item-img-element")
+						img(src="/products/1.jpg" alt="Хачапури по-аджарски")
+				td(class="cart__product-item-content")
+					span(class="cart__product-title") Хачапури по-аджарски
+					span(class="cart__product-weight") 80&nbsp;г
+				td(class="cart__product-item-price" data-title="Цена:") 425&nbsp;₽
+				td(class="cart__product-item-count")
+					include /components/ui/count-input/count-input
+
+				td(class="cart__product-item-summ" data-title="Сумма:") 425&nbsp;₽
+				td(class="cart__product-item-delete")
+					form(action="" class="cart__product-item-delete-form")
+						input(type="hidden" name="product-id")
+						button(class="cart__product-item-delete-button" aria-label="удалить товар" type="submit")
+							include /svg/delete.svg
+
+			//- 2 Блюдо
+			tr(class="cart__product-item")
+				td(class="cart__product-item-img")
+					div(class="cart__product-item-img-element")
+						img(src="/products/2.jpg" alt="Ланч низкокалорийный")
+				td(class="cart__product-item-content")
+					span(class="cart__product-title") Ланч низкокалорийный
+					span(class="cart__product-weight") 80&nbsp;г
+				td(class="cart__product-item-price" data-title="Цена:") 525&nbsp;₽
+				td(class="cart__product-item-count")
+					include /components/ui/count-input/count-input
+
+				td(class="cart__product-item-summ" data-title="Сумма:") 1&nbsp;050&nbsp;₽
+				td(class="cart__product-item-delete")
+					form(action="" class="cart__product-item-delete-form")
+						input(type="hidden" name="product-id")
+						button(class="cart__product-item-delete-button" type="submit")
+							include /svg/delete.svg
+
+			//- 3 Блюдо
+			tr(class="cart__product-item")
+				td(class="cart__product-item-img")
+					div(class="cart__product-item-img-element")
+						img(src="/products/3.jpg" alt="Хинкали жаренные")
+				td(class="cart__product-item-content")
+					span(class="cart__product-title") Хинкали жаренные
+					span(class="cart__product-desc") Из баранины с тархуном
+					span(class="cart__product-weight") 80&nbsp;г
+				td(class="cart__product-item-price" data-title="Цена:") 115&nbsp;₽
+				td(class="cart__product-item-count")
+					include /components/ui/count-input/count-input
+
+				td(class="cart__product-item-summ" data-title="Сумма:") 690&nbsp;₽
+				td(class="cart__product-item-delete")
+					form(action="" class="cart__product-item-delete-form")
+						input(type="hidden" name="product-id")
+						button(class="cart__product-item-delete-button" aria-label="удалить товар" type="submit")
+							include /svg/delete.svg
+
+			//- 4 Блюдо
+			tr(class="cart__product-item")
+				td(class="cart__product-item-img")
+					div(class="cart__product-item-img-element")
+						img(src="/products/4.jpg" alt="Оджахури из телятины")
+				td(class="cart__product-item-content")
+					span(class="cart__product-title") Оджахури из телятины
+					span(class="cart__product-weight") 80&nbsp;г
+				td(class="cart__product-item-price" data-title="Цена:") 355&nbsp;₽
+				td(class="cart__product-item-count")
+					include /components/ui/count-input/count-input
+
+				td(class="cart__product-item-summ" data-title="Сумма:") 355&nbsp;₽
+				td(class="cart__product-item-delete")
+					form(action="" class="cart__product-item-delete-form")
+						input(type="hidden" name="product-id")
+						button(class="cart__product-item-delete-button" aria-label="удалить товар" type="submit")
+							include /svg/delete.svg
+
+			//- 5 Блюдо
+			tr(class="cart__product-item")
+				td(class="cart__product-item-img")
+					div(class="cart__product-item-img-element")
+						img(src="/products/4.jpg" alt="Долма")
+				td(class="cart__product-item-content")
+					span(class="cart__product-title") Долма
+					span(class="cart__product-desc") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam iusto excepturi porro, voluptatem commodi amet reiciendis neque veniam nihil autem accusantium, voluptates libero? Doloribus, nam laborum. Exercitationem dolorem fugit deleniti.
+					span(class="cart__product-weight") 80&nbsp;г
+				td(class="cart__product-item-price" data-title="Цена:") 490&nbsp;₽
+				td(class="cart__product-item-count")
+					include /components/ui/count-input/count-input
+
+				td(class="cart__product-item-summ" data-title="Сумма:") 490&nbsp;₽
+				td(class="cart__product-item-delete")
+					form(action="" class="cart__product-item-delete-form")
+						input(type="hidden" name="product-id")
+						button(class="cart__product-item-delete-button" aria-label="удалить товар" type="submit")
+							include /svg/delete.svg
+
+		tfoot
+			tr
+				td(colspan="6")
+					form(class="promocode" method="post" action="")
+						label(class="promocode__label" for="promocode") Применить промокод:
+						input(class="input promocode__input" type="text" id="promocode")
+						button(class="button button_secondary promocode__button" type="submit") Применить
+
+					form(class="cart__result" action="")
+						label(class="cart__result-label" for="cart__result-button") Итого к оплате: <span class="cart__result-label-price">2&nbsp;580&nbsp;₽</span>
+						button(type="submit" class="button cart__result-button" id="cart__result-button") Оформить заказ

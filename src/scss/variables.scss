@@ -1,0 +1,27 @@
+:root{
+	--color-base: #FFF;
+	--color-secondary: #9EA2AA;
+	--color-black: #000;
+	--color-accent: #FBD13E;
+	--color-accent-contast: #000;
+	--color-important: #B70000;
+	--color-nav-border: #3D3D3D;
+	--color-nav-subtitle: #999;
+	--color-bg-main: #0F0F11;
+	--color-bg-header: #000;
+	--color-bg-footer: #000;
+	--color-border: rgba(255, 255, 255, .3);
+	/* Button Colors */
+		/* Base */
+		--color-button-bg: #FBD13E;
+		--color-button-border: #FBD13E;
+		--color-button: #000;
+		/* Hover */
+		--color-button-bg_hover: #DBB325;
+		--color-button-border_hover: #DBB325;
+		--color-button_hover: #000;
+		/* Active */
+		--color-button-bg_active: #000;
+		--color-button-border_active: #000;
+		--color-button_active: #FBD13E;
+}

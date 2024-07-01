@@ -1,0 +1,92 @@
+.count-input{
+	display: inline-flex;
+	border: 1px solid var(--color-secondary);
+	padding: 10px 16px;
+	margin: 0 auto;
+	min-width: 81px;
+	justify-content: space-between;
+}
+
+.count-input__button{
+	background: var(--color-black);
+	color: var(--color-base);
+	border: none;
+	width: 22px;
+	height: 22px;
+	position: relative;
+
+	&_minus{
+		margin-left: -27px;
+	}
+
+	&_plus{
+		margin-right: -27px;
+	}
+
+	&:hover{
+		.count-input__button-icon{
+			svg{
+				fill: var(--color-accent);
+			}
+		}
+	}
+}
+
+
+.count-input__button-icon{
+	position: absolute;
+	display: block;
+	width: 0.75rem;
+	height: 0.75rem;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+
+	svg{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		margin: auto;
+		fill: var(--color-base);
+		transition: all .2s ease-in;
+	}
+}
+
+
+.count-input__element-counter{
+	width: 1ch;
+	max-width: 2ch;
+	text-align: right;
+	font-variant-numeric: tabular-nums;
+
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 1.2;
+	padding: 0;
+	background: none;
+	border: none;
+	color: var(--color-base);
+	margin-right: .5em;
+	outline: none;
+
+	@media (width > 767px) {
+		font-size: 0.8125rem;
+	}
+}
+
+
+.count-input__element-label{
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 1.2;
+
+	@media (width > 767px) {
+		font-size: 0.8125rem;
+	}
+}
